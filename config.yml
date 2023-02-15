@@ -2,7 +2,6 @@ baseURL: "//humailkhan829.net/"
 title: humailkhan829
 paginate: 5
 theme: PaperMod
-uglyurls: true
 
 enableRobotsTXT: true
 buildDrafts: false
