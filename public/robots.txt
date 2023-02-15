@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: //humailkhan829.net/sitemap.xml
