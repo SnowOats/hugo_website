@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>first on humail khan</title>
+    <link>//humailkhan829.net/tags/first/</link>
+    <description>Recent content in first on humail khan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="//humailkhan829.net/tags/first/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My 1st post</title>
+      <link>//humailkhan829.net/page/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>//humailkhan829.net/page/</guid>
+      <description>Desc Text.</description>
+    </item>
+    
+  </channel>
+</rss>
