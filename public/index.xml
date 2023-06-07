@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>humail khan</title>
-    <link>//humailkhan829.net/</link>
+    <link>/</link>
     <description>Recent content on humail khan</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 05 Apr 2022 23:15:00 +0700</lastBuildDate><atom:link href="//humailkhan829.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Apr 2022 23:15:00 +0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS Cloud Resume Challenge</title>
-      <link>//humailkhan829.net/projects/aws-cloud-resume-challenge/</link>
+      <link>/projects/aws-cloud-resume-challenge/</link>
       <pubDate>Tue, 05 Apr 2022 23:15:00 +0700</pubDate>
       
-      <guid>//humailkhan829.net/projects/aws-cloud-resume-challenge/</guid>
+      <guid>/projects/aws-cloud-resume-challenge/</guid>
       <description>Part 1 set up SSO, S3, Route 53, and Cloudfront Set up Organization and SSO Create Organizational accounts Best practices guide for setting up AWS Organization:
 (Optional) use OrgFormation / AWS Control Tower with AWS SSO This is best used for enterprise set up
 SSO and Organization set up Guide
@@ -20,10 +20,10 @@ Set up billing alerts Creating a budget Open the AWS Billing console at https:/
     
     <item>
       <title>Implementing DNS SEC in AWS</title>
-      <link>//humailkhan829.net/projects/dns-sec/</link>
+      <link>/projects/dns-sec/</link>
       <pubDate>Mon, 04 Apr 2022 23:15:00 +0700</pubDate>
       
-      <guid>//humailkhan829.net/projects/dns-sec/</guid>
+      <guid>/projects/dns-sec/</guid>
       <description>Implementing DNSSEC using Route53 verify no DNS SEC is present run command on AWS CLI dig animlas4life.org dnskey +dnssec Set up DNS SEC Route53 &amp;gt; Hosted zones go inside animals4life.org
 DNSSEC signing &amp;gt; enable DNSSEC signing
 Create KSK Verify DNSSEC Keys run command on AWS CLI dig animlas4life.org dnskey +dnssec Get KSK signing algorithm &amp;amp; public key Route 53 &amp;gt; hosted zone &amp;gt; animlas4life.org &amp;gt; DNSSEC signing &amp;gt; view information to create DS record Create train of trust with TLD DNS &amp;gt; registered domains &amp;gt; DNSSEC Status this will modify the TLD of animals4lyfe domain zone by adding DS record this process might take a hour to complete.</description>
@@ -31,10 +31,10 @@ Create KSK Verify DNSSEC Keys run command on AWS CLI dig animlas4life.org dnskey
     
     <item>
       <title>My 1st post</title>
-      <link>//humailkhan829.net/page/</link>
+      <link>/page/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
       
-      <guid>//humailkhan829.net/page/</guid>
+      <guid>/page/</guid>
       <description>Desc Text.</description>
     </item>
     
