@@ -16,12 +16,15 @@
     </item>
     
     <item>
-      <title>ERpred: a web server for the prediction of subtype-specific estrogen receptor antagonists</title>
-      <link>//humailkhan829.net/projects/erpred/</link>
+      <title>AWS Cloud Resume Challenge</title>
+      <link>//humailkhan829.net/projects/aws-cloud-resume-challenge/</link>
       <pubDate>Tue, 05 Apr 2022 23:15:00 +0700</pubDate>
       
-      <guid>//humailkhan829.net/projects/erpred/</guid>
-      <description>Abstract Estrogen receptors alpha and beta (ERα and ERβ) are responsible for breast cancer metastasis through their involvement of clinical outcomes. Estradiol and hormone replacement therapy targets both ERs, but this often leads to an increased risk of breast and endometrial cancers as well as thromboembolism. A major challenge is posed for the development of compounds possessing ER subtype specificity. Herein, we present a large-scale classification structure-activity relationship (CSAR) study of inhibitors from the ChEMBL database which consisted of an initial set of 11,618 compounds for ERα and 7,810 compounds for ERβ.</description>
+      <guid>//humailkhan829.net/projects/aws-cloud-resume-challenge/</guid>
+      <description>Part 1 set up SSO, S3, Route 53, and Cloudfront Set up Organization and SSO Create Organizational accounts Best practices guide for setting up AWS Organization:
+(Optional) use OrgFormation / AWS Control Tower with AWS SSO This is best used for enterprise set up
+SSO and Organization set up Guide
+Set up billing alerts Creating a budget Open the AWS Billing console at https://console.aws.amazon.com/billing/. or select Select Billing Dashboard from your account or type Billing on Search bar In the navigation pane, choose Budgets.</description>
     </item>
     
     <item>
@@ -30,7 +33,9 @@
       <pubDate>Mon, 04 Apr 2022 23:15:00 +0700</pubDate>
       
       <guid>//humailkhan829.net/projects/acetylcholinesterase/</guid>
-      <description>Abstract Alzheimer’s disease (AD) is a chronic neurodegenerative disease which leads to the gradual loss of neuronal cells. Several hypotheses for AD exists (e.g., cholinergic, amyloid, tau hypotheses, etc.). As per the cholinergic hypothesis, the deficiency of choline is responsible for AD; therefore, the inhibition of AChE is a lucrative therapeutic strategy for the treatment of AD. Acetylcholinesterase (AChE) is an enzyme that catalyzes the breakdown of the neurotransmitter acetylcholine that is essential for cognition and memory.</description>
+      <description>Implementing DNSSEC using Route53 Architecture verify no DNS SEC is present run command on AWS CLI dig animlas4life.org dnskey +dnssec Set up DNS SEC Route53 &amp;gt; Hosted zones go inside animals4life.org
+DNSSEC signing &amp;gt; enable DNSSEC signing
+Create KSK Verify DNSSEC Keys run command on AWS CLI dig animlas4life.org dnskey +dnssec Get KSK signing algorithm &amp;amp; public key Route 53 &amp;gt; hosted zone &amp;gt; animlas4life.org &amp;gt; DNSSEC signing &amp;gt; view information to create DS record Create train of trust with TLD DNS &amp;gt; registered domains &amp;gt; DNSSEC Status this will modify the TLD of animals4lyfe domain zone by adding DS record this process might take a hour to complete.</description>
     </item>
     
     <item>
