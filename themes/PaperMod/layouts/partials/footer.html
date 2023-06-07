@@ -1,6 +1,5 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
-    <div class="counter-number">Couldn't read the counter</div>
     {{- if site.Copyright }}
     <span>{{ site.Copyright | markdownify }}</span>
     {{- else }}
@@ -48,7 +47,6 @@
     });
 
 </script>
-
 {{- if (not site.Params.disableScrollToTop) }}
 <script>
     var mybutton = document.getElementById("top-link");
@@ -62,17 +60,7 @@
         }
     };
 </script>
-<script>
-    const counter = document.querySelector(".counter-number");
-    async function updateCounter() {
-        let response = await fetch(
-            "https://2o4irjm3xxa3qwlwub4765lsoq0fsbvz.lambda-url.us-east-1.on.aws/"
-        );
-        let data = await response.json();
-        counter.innerHTML = `👀 Views: ${data}`;
-    }
-    updateCounter();
-</script>
+
 {{- end }}
 
 {{- if (not site.Params.disableThemeToggle) }}
