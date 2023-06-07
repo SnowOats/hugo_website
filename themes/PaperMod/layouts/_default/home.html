@@ -64,15 +64,16 @@
     const counter = document.querySelector(".counter-number");
     const API_GATEWAY = "https://dhytdk46u3.execute-api.us-east-1.amazonaws.com/dev"
     async function updateCounter() {
-        var header = new Headers()
-        header.append("Content-Type", "application/json")
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        var raw = JSON.stringify({});
         var requestOptions = {
             method: 'POST',
-            Headers: header,
-            body: {},
+            Headers: myHeaders,
+            body: raw,
             redirect: 'follow'
         }
-        const response = await fetch(API_GATEWAY);
+        const response = await fetch(API_GATEWAY,requestOptions);
         let data = await response.json();
         counter.innerHTML = `👀 Views: ${data}`;
     }

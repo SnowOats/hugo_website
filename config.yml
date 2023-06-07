@@ -1,4 +1,6 @@
 baseURL: "//humailkhan829.net/"
+relativeURLs: "True"
+
 title: humail khan
 paginate: 5
 theme: PaperMod
@@ -34,7 +36,7 @@ params:
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
+  UseHugoToc: false
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false

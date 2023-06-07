@@ -10,7 +10,7 @@ cover:
   alt:
   caption:
   relative: true
-showtoc: false
+showtoc: true
 draft: false
 ---
 # Part 1 set up SSO, S3, Route 53, and Cloudfront
@@ -25,62 +25,62 @@ draft: false
 #### Creating a budget
 Open the AWS Billing console at [https://console.aws.amazon.com/billing/](https://console.aws.amazon.com/billing/home?#/).
 or select Select Billing Dashboard from your account or type `Billing` on Search bar
-![Alt Text](/projects/images/Pasted%20image%2020221009164514.png)
+![Alt Text](../../images/Pasted%20image%2020221009164514.png)
 In the navigation pane, choose **Budgets**.\
 Create a budget
-![Alt Text](/projects/images/Pasted%20image%2020221009164844.png)
+![Alt Text](../../images/Pasted%20image%2020221009164844.png)
 if you don't have cost explorer enabled already, enable it now. 
-![Alt Text](/projects/images/Pasted%20image%2020221009165153.png)
+![Alt Text](../../images/Pasted%20image%2020221009165153.png)
 Select the monthly cost budget
-![Alt Text](/projects/images/Pasted%20image%2020230531152459.png)
+![Alt Text](../../images/Pasted%20image%2020230531152459.png)
 Fill in the details for the budget and create the budget
-![Alt Text](/projects/images/Pasted%20image%2020230531152543.png)
+![Alt Text](../../images/Pasted%20image%2020230531152543.png)
 #### Set up billing alerts
 In the navigation pane, Preferences > Billing preferences.\
 Enroll in receiving and invoice along with alerts
-![Alt Text](/projects/images/Pasted%20image%2020221009164702.png) 
+![Alt Text](../../images/Pasted%20image%2020221009164702.png) 
 #### To enable the monitoring of estimated charges
 Open the AWS Billing console at [https://console.aws.amazon.com/billing/](https://console.aws.amazon.com/billing/home?#/).\
 In the navigation pane, choose **Billing Preferences**.\
 By **Alert preferences** choose **Edit**.
-![Alt Text](/projects/images/Pasted%20image%2020230605122733.png)
+![Alt Text](../../images/Pasted%20image%2020230605122733.png)
 Choose **Receive CloudWatch Billing Alerts**.
 Choose **Save preferences**.
-![Alt Text](/projects/images/Pasted%20image%2020230605122758.png)
+![Alt Text](../../images/Pasted%20image%2020230605122758.png)
 ## Set up Access key and verify
 #### Creating Access keys for IAM user
 1) Go to IAM
 2) under navigation pane, **Access Management > users**
 3) Choose to view a user by clicking on their name
 4) Select `Security Credentials` tab and scroll down to Access Key
-![Alt Text](/projects/images/Pasted%20image%2020230531153517.png)
+![Alt Text](../../images/Pasted%20image%2020230531153517.png)
 4) Create the access key
-![Alt Text](/projects/images/Pasted%20image%2020230403233243.png)
+![Alt Text](../../images/Pasted%20image%2020230403233243.png)
 #### Creating access keys for the AWS account root
 1. Choose your account name in the navigation bar, and then choose **My Security Credentials**.
-	![Alt Text](/projects/images/Pasted%20image%2020230412192125.png)
+	![Alt Text](../../images/Pasted%20image%2020230412192125.png)
 Expand the Access keys (access key ID and secret access key) section.
 Choose **Create New Access Key**.
 #### AWS CLI
 download [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and launch it
 type  `aws configure --profile iamadmin-general` 
 Replace `iamadmin-general` with the name of your profile.
-![Alt Text](/projects/images/Pasted%20image%2020230403233450.png)
+![Alt Text](../../images/Pasted%20image%2020230403233450.png)
 verify if account is configured successfully: `aws s3 ls --profile iamadmin-general`
-![Alt Text](/projects/images/Pasted%20image%2020230403233507.png)
+![Alt Text](../../images/Pasted%20image%2020230403233507.png)
 [AWS Documentation](https://docs.aws.amazon.com/accounts/latest/reference/root-user-access-key.html)
 ## Deploy Static Website to AWS S3 with HTTPS using CloudFront
 ### Set up S3
 Create two buckets. One for the domain name and another starting with the prefix (www.)
-![Alt Text](/projects/images/Pasted%20image%2020230605124226.png)
+![Alt Text](../../images/Pasted%20image%2020230605124226.png)
 ### Route 53 Domain registration and hosted zones
 open up https://us-east-1.console.aws.amazon.com/route53/v2/home
 on the navigation pane, select **Registered domains**\
 Register a custom domain with Route 53 or transfer one in
-![Alt Text](/projects/images/Pasted%20image%2020230605124148.png)
+![Alt Text](../../images/Pasted%20image%2020230605124148.png)
 on the navigation pane of Route 53, select **Hosted zones**\
 Create a new hosted zone by providing the domain name and ensure it is set to type **public hosted zone**
-![Alt Text](/projects/images/Pasted%20image%2020230605140535.png)
+![Alt Text](../../images/Pasted%20image%2020230605140535.png)
 ### Adding CDN to S3
 [Reference](https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-cloudfront-walkthrough.html)
 CDN is needed to speed up website, enforce HTTPS only, and block public access to S3 by using origin control.
@@ -90,51 +90,51 @@ ACM is used to secure a website from HTTP to HTTPS
 Search for ACM or Amazon Certificate Manager in the search bar and click on certificate manager in the AWS management console
 
 Request for a new certificate
-![Alt Text](/projects/images/Pasted%20image%2020230605141101.png)
+![Alt Text](../../images/Pasted%20image%2020230605141101.png)
 Request for public certificate
-![Alt Text](/projects/images/Pasted%20image%2020230605141115.png)
+![Alt Text](../../images/Pasted%20image%2020230605141115.png)
 Enter for the fully qualified domain name
 `*.humailkhan829.net`
 This certificate will secure any subdomain of *humailkhan829.net*, such as *sub.humailkhan829.net* or *test.humailkhan829.net*.
 #### Creating distribution
 Go to cloud front > Distribution > create distribution
-![Alt Text](/projects/images/Pasted%20image%2020230605141836.png)
+![Alt Text](../../images/Pasted%20image%2020230605141836.png)
 Specify the name, and ensure origin access control setting is enabled
-![Alt Text](/projects/images/Pasted%20image%2020230605142003.png)
+![Alt Text](../../images/Pasted%20image%2020230605142003.png)
 Under **Default cache behavior > Viewer**, enforce HTTPS only
-![Alt Text](/projects/images/Pasted%20image%2020230605142048.png)
+![Alt Text](../../images/Pasted%20image%2020230605142048.png)
 Under **Settings**, Specify custom domain names and SSL cert
-![Alt Text](/projects/images/Pasted%20image%2020230605142312.png)
+![Alt Text](../../images/Pasted%20image%2020230605142312.png)
 ### Create CNAME redirect and Cloudfront redirect
 open up https://us-east-1.console.aws.amazon.com/route53/v2/home\
 on the navigation pane of Route 53, select **Hosted zones**\
 Selected hosted zone and view details\
 Create these type of records 
 1) route for the domain to route to cloud front
-![Alt Text](/projects/images/Pasted%20image%2020230605143002.png)
+![Alt Text](../../images/Pasted%20image%2020230605143002.png)
 2) redirect any sub domain to root domain with CNAME record
-![Alt Text](/projects/images/Pasted%20image%2020230605143210.png)
+![Alt Text](../../images/Pasted%20image%2020230605143210.png)
 Also, the ACM should populate a CNAME entry like the following
-![Alt Text](/projects/images/Pasted%20image%2020230605143416.png)
+![Alt Text](../../images/Pasted%20image%2020230605143416.png)
 if not, go to your certificate under ACM and create a record using the CNAME name and CNAME value
-![Alt Text](/projects/images/Pasted%20image%2020230605143656.png)
+![Alt Text](../../images/Pasted%20image%2020230605143656.png)
 ### Errors
 #### Changes to S3 is not reflecting to CloudFront
 Invalidate Cloudfront cache
 https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html#invalidating-objects-api
 `aws cloudfront create-invalidation --distribution-id E3HKHQS3APLTXO --paths "/*"`
-![Alt Text](Bins/Images//projects/images/Pasted%20image%2020230202130333.png)
+![Alt Text](Bins/Images/../../images/Pasted%20image%2020230202130333.png)
 
 #### Permission denied error
 Check to see if name servers for host zone is the same for the registered domain
 
 Route 53 > Registered Domain > select domain
-![Alt Text](/projects/images/Pasted%20image%2020230516222217.png)
+![Alt Text](../../images/Pasted%20image%2020230516222217.png)
 Route 53 > Hosted Zones 
-![Alt Text](/projects/images/Pasted%20image%2020230516222243.png)
+![Alt Text](../../images/Pasted%20image%2020230516222243.png)
 
 #### S3 bucket blocked public access is still public
-![Alt Text](/projects/images/Pasted%20image%2020230529151206.png)
+![Alt Text](../../images/Pasted%20image%2020230529151206.png)
 Caching problem. Wait a while and refresh the page. 
 
 #### Cloudfront OAI not accessing subdomain correctly
@@ -192,10 +192,10 @@ add trust relation for lambda function
 }
 ```
 Add Trigger for cloud front and set up lambda edge for origin request
-![Alt Text](/projects/images/Pasted%20image%2020230529162036.png)
+![Alt Text](../../images/Pasted%20image%2020230529162036.png)
 # Set up DynamoDB, lambda api
 ### Create dynamoDB table item
-![Alt Text](/projects/images/Pasted%20image%2020230529182253.png)
+![Alt Text](../../images/Pasted%20image%2020230529182253.png)
 ### lambda function
 ```python
 import json
@@ -219,19 +219,27 @@ def lambda_handler(event, context):
     return views
 ```
 You can create the environment variable under Configuration > Environment variables\
+
+#### 'Internal Server Error' when calling lambda function to update dynamoDB
+Missing permission. 
+Lambda function > Permission > execution role
+![Alt Text](../../images/Pasted%20image%2020230529171333.png)
+Attach the following policies
+![Alt Text](../../images/Pasted%20image%2020230529171309.png)
+
 ### API Gateway
 #### Set up API call
 on the navigation pane, select **Resources**
 Click Actions > Create Method
-![Alt Text](/projects/images/Pasted%20image%2020230605131725.png)
+![Alt Text](../../images/Pasted%20image%2020230605131725.png)
 connect API Gateway to Lambda function
-![Alt Text](/projects/images/Pasted%20image%2020230605135636.png)
+![Alt Text](../../images/Pasted%20image%2020230605135636.png)
 #### Enable CORS
 Click Actions > Enable CORS\
 once set up, enable CORS so that cloud front origin is allowed to interact with API Gateway
-![Alt Text](/projects/images/Pasted%20image%2020230605135855.png)
+![Alt Text](../../images/Pasted%20image%2020230605135855.png)
 #### Test API
-![Alt Text](/projects/images/Pasted%20image%2020230605132231.png)
+![Alt Text](../../images/Pasted%20image%2020230605132231.png)
 ##### Request Body
 ```
 {
@@ -265,24 +273,26 @@ once set up, enable CORS so that cloud front origin is allowed to interact with 
 Insert html text for your homepage
 #### index.js
 ```js
-    const counter = document.querySelector(".counter-number");
-    const API_GATEWAY = "https://dhytdke9a8.execute-api.us-east-1.amazonaws.com/dev"
-    async function updateCounter() {
-        var header = new Headers()
-        header.append("Content-Type", "application/json")
-        var requestOptions = {
-            method: 'POST',
-            Headers: header,
-            body: {},
-            redirect: 'follow'
-        }
-        const response = await fetch(API_GATEWAY);
-        let data = await response.json();
-        counter.innerHTML = `👀 Views: ${data}`;
+const counter = document.querySelector(".counter-number");
+const API_GATEWAY = "https://dhytdk89e1.execute-api.us-east-1.amazonaws.com/dev"
+async function updateCounter() {
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    var raw = JSON.stringify({});
+    var requestOptions = {
+        method: 'POST',
+        Headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
     }
-    updateCounter();
+    const response = await fetch(API_GATEWAY,requestOptions);
+    let data = await response.json();
+    counter.innerHTML = `👀 Views: ${data}`;
+}
+updateCounter();
 ```
 > replace **API_GATEWAY** with your URL. 
+Alternatively, instead of using two files, you can embed within **index.html** by inserting the <script> tag
 # Set up CI/CD
 #### Setting up GitHub actions
 Create the file `.github/workflows` inside your project and create `main.yaml` with the following config
@@ -314,28 +324,21 @@ jobs:
 On github page, move to Settings\
 On the left navigation pane, Security > Secrets and variables > Actions\
 Create new repository secrets
-![Alt Text](/projects/images/Pasted%20image%2020230531174217.png)
+![Alt Text](../../images/Pasted%20image%2020230531174217.png)
 >AWS_S3_BUCKET is the name of the s3 bucket, not the ARN.
 #### Verify changes
 Create a new PR to the repo and go to actions. The workflow will start deploying the PR onto the S3.
-![Alt Text](/projects/images/Pasted%20image%2020230531174459.png)
+![Alt Text](../../images/Pasted%20image%2020230531174459.png)
 ### Errors
 #### ACL blocking github/floworks
 upload failed: public/page/index.html to s3://***/page/index.html An error occurred (AccessDenied) when calling the PutObject operation: Access Denied
 
 1) Configure S3 bucket to allow public access to ACL
-![Alt Text](/projects/images/Pasted%20image%2020230529193837.png)
+![Alt Text](../../images/Pasted%20image%2020230529193837.png)
 2) Change the ownership of the bucket to enable ACLs
-![Alt Text](/projects/images/Pasted%20image%2020230529193857.png)
+![Alt Text](../../images/Pasted%20image%2020230529193857.png)
 3) Verify that the bucket owner has Write access to the bucket. This assumes the access keys belongs to the bucket owner.
-![Alt Text](/projects/images/Pasted%20image%2020230529193914.png)
-
-#### 'Internal Server Error' when calling lambda function to update dynamoDB
-Missing permission. 
-Lambda function > Permission > execution role
-![Alt Text](/projects/images/Pasted%20image%2020230529171333.png)
-Attach the following policies
-![Alt Text](/projects/images/Pasted%20image%2020230529171309.png)
+![Alt Text](../../images/Pasted%20image%2020230529193914.png)
 
 #### ERROR: {"message":"Missing Authentication Token"}
 The API gateway link cannot directly be called, instead pass in a Request Body
