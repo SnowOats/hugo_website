@@ -1,6 +1,6 @@
 ---
 title: "Implementing DNS SEC in AWS"
-date: 2022-04-04T23:15:00+07:00
+date: 2023-06-10T23:15:00+07:00
 slug: dns-sec
 category: AWS
 summary:
@@ -43,6 +43,7 @@ DNS > registered domains > DNSSEC Status
 this will modify the TLD of animals4lyfe domain zone by adding DS record
 this process might take a hour to complete. 
 ![Alt Text](../../images/Pasted%20image%2020230523214719.png)
+![Alt Text](../../images/Pasted%20image%2020230530200455.png)
 #### Verify DS record
 Get TLD
 `dig org NS +short`

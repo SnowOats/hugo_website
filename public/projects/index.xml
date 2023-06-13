@@ -5,11 +5,11 @@
     <link>/projects/</link>
     <description>Recent content in Projects on humail khan</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 05 Apr 2022 23:15:00 +0700</lastBuildDate><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Jun 2023 18:10:00 -0500</lastBuildDate><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS Cloud Resume Challenge</title>
       <link>/projects/aws-cloud-resume-challenge/</link>
-      <pubDate>Tue, 05 Apr 2022 23:15:00 +0700</pubDate>
+      <pubDate>Tue, 13 Jun 2023 18:10:00 -0500</pubDate>
       
       <guid>/projects/aws-cloud-resume-challenge/</guid>
       <description>Part 1 set up SSO, S3, Route 53, and Cloudfront Set up Organization and SSO Create Organizational accounts Best practices guide for setting up AWS Organization:
@@ -19,9 +19,20 @@ Set up billing alerts Creating a budget Open the AWS Billing console at https:/
     </item>
     
     <item>
+      <title>AWS Cloud Resume Challenge</title>
+      <link>/projects/aws-cloud-resume-challenge/</link>
+      <pubDate>Tue, 13 Jun 2023 12:00:01 -0500</pubDate>
+      
+      <guid>/projects/aws-cloud-resume-challenge/</guid>
+      <description>Amazon Macie Goal: use Amazon Macie to identify sensitive information stored in an S3 bucket and notify subscribers Credit cards - cc.txt
+American Express 5135725008183484 09/26 CVE: 550 American Express 347965534580275 05/24 CCV: 4758 Mastercard 5105105105105100 Exp: 01/27 Security code: 912 Employee information - employees.txt
+74323 Julie Field Lake Joshuamouth, OR 30055-3905 1-196-191-4438x974 53001 Paul Union New John, HI 94740 Amanda Wells 354-70-6172 242 George Plaza East Lawrencefurt, VA 37287-7620 GB73WAUS0628038988364 587 Silva Village Pearsonburgh, NM 11616-7231 LDNM1948227117807 Brett Garza Access credentials - keys.</description>
+    </item>
+    
+    <item>
       <title>Implementing DNS SEC in AWS</title>
       <link>/projects/dns-sec/</link>
-      <pubDate>Mon, 04 Apr 2022 23:15:00 +0700</pubDate>
+      <pubDate>Sat, 10 Jun 2023 23:15:00 +0700</pubDate>
       
       <guid>/projects/dns-sec/</guid>
       <description>Implementing DNSSEC using Route53 verify no DNS SEC is present run command on AWS CLI dig animlas4life.org dnskey +dnssec Set up DNS SEC Route53 &amp;gt; Hosted zones go inside animals4life.org

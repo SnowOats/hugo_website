@@ -1,6 +1,6 @@
 ---
 title: "AWS Cloud Resume Challenge"
-date: 2022-04-05T23:15:00+07:00
+date: 2023-06-13T18:10:00-05:00
 slug: aws-cloud-resume-challenge
 category: AWS
 summary:
