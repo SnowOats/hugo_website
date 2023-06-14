@@ -266,6 +266,10 @@ once set up, enable CORS so that cloud front origin is allowed to interact with 
     ]
 }
 ```
+
+#### ERROR: {"message":"Missing Authentication Token"}
+The API gateway link cannot directly be called, instead pass in a Request Body by making a cURL request
+
 ### Website modification
 #### index.html
 ```html
@@ -341,5 +345,3 @@ upload failed: public/page/index.html to s3://***/page/index.html An error occur
 3) Verify that the bucket owner has Write access to the bucket. This assumes the access keys belongs to the bucket owner.
 ![Alt Text](../../images/Pasted%20image%2020230529193914.png)
 
-#### ERROR: {"message":"Missing Authentication Token"}
-The API gateway link cannot directly be called, instead pass in a Request Body
