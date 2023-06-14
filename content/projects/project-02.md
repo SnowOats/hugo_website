@@ -3,6 +3,7 @@ title: "AWS Cloud Resume Challenge"
 date: 2023-06-13T18:10:00-05:00
 slug: aws-cloud-resume-challenge
 category: AWS
+tags: ["AWS","Route 53", "Lambda", "DynamoDB", "Budget", "S3", "Cloudfront", "ACM","API Gateway", "CI/CD"]
 summary:
 description:
 cover:

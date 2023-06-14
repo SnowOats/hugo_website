@@ -3,6 +3,7 @@ title: "Implementing DNS SEC in AWS"
 date: 2023-06-10T23:15:00+07:00
 slug: dns-sec
 category: AWS
+tags: ["AWS","DNS SEC", "Route 53"]
 summary:
 description:
 cover:

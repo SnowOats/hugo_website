@@ -40,14 +40,5 @@ DNSSEC signing &amp;gt; enable DNSSEC signing
 Create KSK Verify DNSSEC Keys run command on AWS CLI dig animlas4life.org dnskey +dnssec Get KSK signing algorithm &amp;amp; public key Route 53 &amp;gt; hosted zone &amp;gt; animlas4life.org &amp;gt; DNSSEC signing &amp;gt; view information to create DS record Create train of trust with TLD DNS &amp;gt; registered domains &amp;gt; DNSSEC Status this will modify the TLD of animals4lyfe domain zone by adding DS record this process might take a hour to complete.</description>
     </item>
     
-    <item>
-      <title>My 1st post</title>
-      <link>/page/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
-      
-      <guid>/page/</guid>
-      <description>Desc Text.</description>
-    </item>
-    
   </channel>
 </rss>

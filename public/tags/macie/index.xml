@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Macie on humail khan</title>
+    <link>/tags/macie/</link>
+    <description>Recent content in Macie on humail khan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 13 Jun 2023 12:00:01 -0500</lastBuildDate><atom:link href="/tags/macie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS Macie Demo</title>
+      <link>/projects/aws-macie-demo/</link>
+      <pubDate>Tue, 13 Jun 2023 12:00:01 -0500</pubDate>
+      
+      <guid>/projects/aws-macie-demo/</guid>
+      <description>Amazon Macie Goal: use Amazon Macie to identify sensitive information stored in an S3 bucket and notify subscribers Credit cards - cc.txt
+American Express 5135725008183484 09/26 CVE: 550 American Express 347965534580275 05/24 CCV: 4758 Mastercard 5105105105105100 Exp: 01/27 Security code: 912 Employee information - employees.txt
+74323 Julie Field Lake Joshuamouth, OR 30055-3905 1-196-191-4438x974 53001 Paul Union New John, HI 94740 Amanda Wells 354-70-6172 242 George Plaza East Lawrencefurt, VA 37287-7620 GB73WAUS0628038988364 587 Silva Village Pearsonburgh, NM 11616-7231 LDNM1948227117807 Brett Garza Access credentials - keys.</description>
+    </item>
+    
+  </channel>
+</rss>

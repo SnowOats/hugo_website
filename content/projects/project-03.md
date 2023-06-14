@@ -3,6 +3,7 @@ title: "AWS Macie Demo"
 date: 2023-06-13T12:00:01-05:00
 slug: aws-macie-demo
 category: AWS
+tags: ["AWS","Macie", "EventBridge", "SNS", "Terraform"]
 summary:
 description:
 cover:

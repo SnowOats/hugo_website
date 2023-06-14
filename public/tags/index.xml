@@ -5,13 +5,139 @@
     <link>/tags/</link>
     <description>Recent content in Tags on humail khan</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Jun 2023 18:10:00 -0500</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>first</title>
-      <link>/tags/first/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <title>ACM</title>
+      <link>/tags/acm/</link>
+      <pubDate>Tue, 13 Jun 2023 18:10:00 -0500</pubDate>
       
-      <guid>/tags/first/</guid>
+      <guid>/tags/acm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>API Gateway</title>
+      <link>/tags/api-gateway/</link>
+      <pubDate>Tue, 13 Jun 2023 18:10:00 -0500</pubDate>
+      
+      <guid>/tags/api-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
+      <link>/tags/aws/</link>
+      <pubDate>Tue, 13 Jun 2023 18:10:00 -0500</pubDate>
+      
+      <guid>/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Budget</title>
+      <link>/tags/budget/</link>
+      <pubDate>Tue, 13 Jun 2023 18:10:00 -0500</pubDate>
+      
+      <guid>/tags/budget/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloudfront</title>
+      <link>/tags/cloudfront/</link>
+      <pubDate>Tue, 13 Jun 2023 18:10:00 -0500</pubDate>
+      
+      <guid>/tags/cloudfront/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DynamoDB</title>
+      <link>/tags/dynamodb/</link>
+      <pubDate>Tue, 13 Jun 2023 18:10:00 -0500</pubDate>
+      
+      <guid>/tags/dynamodb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lambda</title>
+      <link>/tags/lambda/</link>
+      <pubDate>Tue, 13 Jun 2023 18:10:00 -0500</pubDate>
+      
+      <guid>/tags/lambda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Route 53</title>
+      <link>/tags/route-53/</link>
+      <pubDate>Tue, 13 Jun 2023 18:10:00 -0500</pubDate>
+      
+      <guid>/tags/route-53/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S3</title>
+      <link>/tags/s3/</link>
+      <pubDate>Tue, 13 Jun 2023 18:10:00 -0500</pubDate>
+      
+      <guid>/tags/s3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EventBridge</title>
+      <link>/tags/eventbridge/</link>
+      <pubDate>Tue, 13 Jun 2023 12:00:01 -0500</pubDate>
+      
+      <guid>/tags/eventbridge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Macie</title>
+      <link>/tags/macie/</link>
+      <pubDate>Tue, 13 Jun 2023 12:00:01 -0500</pubDate>
+      
+      <guid>/tags/macie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SNS</title>
+      <link>/tags/sns/</link>
+      <pubDate>Tue, 13 Jun 2023 12:00:01 -0500</pubDate>
+      
+      <guid>/tags/sns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terraform</title>
+      <link>/tags/terraform/</link>
+      <pubDate>Tue, 13 Jun 2023 12:00:01 -0500</pubDate>
+      
+      <guid>/tags/terraform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DNS SEC</title>
+      <link>/tags/dns-sec/</link>
+      <pubDate>Sat, 10 Jun 2023 23:15:00 +0700</pubDate>
+      
+      <guid>/tags/dns-sec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CI/CD</title>
+      <link>/tags/ci/cd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ci/cd/</guid>
       <description></description>
     </item>
     

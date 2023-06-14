@@ -2,30 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tags/acm/</loc>
+    <lastmod>2023-06-13T18:10:00-05:00</lastmod>
+  </url><url>
+    <loc>/tags/api-gateway/</loc>
+    <lastmod>2023-06-13T18:10:00-05:00</lastmod>
+  </url><url>
+    <loc>/tags/aws/</loc>
+    <lastmod>2023-06-13T18:10:00-05:00</lastmod>
+  </url><url>
     <loc>/projects/aws-cloud-resume-challenge/</loc>
+    <lastmod>2023-06-13T18:10:00-05:00</lastmod>
+  </url><url>
+    <loc>/tags/budget/</loc>
+    <lastmod>2023-06-13T18:10:00-05:00</lastmod>
+  </url><url>
+    <loc>/tags/cloudfront/</loc>
+    <lastmod>2023-06-13T18:10:00-05:00</lastmod>
+  </url><url>
+    <loc>/tags/dynamodb/</loc>
     <lastmod>2023-06-13T18:10:00-05:00</lastmod>
   </url><url>
     <loc>/</loc>
     <lastmod>2023-06-13T18:10:00-05:00</lastmod>
   </url><url>
+    <loc>/tags/lambda/</loc>
+    <lastmod>2023-06-13T18:10:00-05:00</lastmod>
+  </url><url>
     <loc>/projects/</loc>
+    <lastmod>2023-06-13T18:10:00-05:00</lastmod>
+  </url><url>
+    <loc>/tags/route-53/</loc>
+    <lastmod>2023-06-13T18:10:00-05:00</lastmod>
+  </url><url>
+    <loc>/tags/s3/</loc>
+    <lastmod>2023-06-13T18:10:00-05:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
     <lastmod>2023-06-13T18:10:00-05:00</lastmod>
   </url><url>
     <loc>/projects/aws-macie-demo/</loc>
     <lastmod>2023-06-13T12:00:01-05:00</lastmod>
   </url><url>
+    <loc>/tags/eventbridge/</loc>
+    <lastmod>2023-06-13T12:00:01-05:00</lastmod>
+  </url><url>
+    <loc>/tags/macie/</loc>
+    <lastmod>2023-06-13T12:00:01-05:00</lastmod>
+  </url><url>
+    <loc>/tags/sns/</loc>
+    <lastmod>2023-06-13T12:00:01-05:00</lastmod>
+  </url><url>
+    <loc>/tags/terraform/</loc>
+    <lastmod>2023-06-13T12:00:01-05:00</lastmod>
+  </url><url>
+    <loc>/tags/dns-sec/</loc>
+    <lastmod>2023-06-10T23:15:00+07:00</lastmod>
+  </url><url>
     <loc>/projects/dns-sec/</loc>
     <lastmod>2023-06-10T23:15:00+07:00</lastmod>
   </url><url>
-    <loc>/tags/first/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>/page/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
     <loc>/categories/</loc>
+  </url><url>
+    <loc>/tags/ci/cd/</loc>
   </url>
 </urlset>

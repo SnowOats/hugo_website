@@ -102,6 +102,10 @@ params:
 
 menu:
   main:
+    - identifier: Tags
+      name: Tags
+      url: /tags/
+      weight: 10
     - identifier: Resume
       name: Resume
       url: /resume/

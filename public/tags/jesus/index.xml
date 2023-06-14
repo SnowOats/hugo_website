@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Jesus on humail khan</title>
+    <link>/tags/jesus/</link>
+    <description>Recent content in Jesus on humail khan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 10 Jun 2023 23:15:00 +0700</lastBuildDate><atom:link href="/tags/jesus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing DNS SEC in AWS</title>
+      <link>/projects/dns-sec/</link>
+      <pubDate>Sat, 10 Jun 2023 23:15:00 +0700</pubDate>
+      
+      <guid>/projects/dns-sec/</guid>
+      <description>Implementing DNSSEC using Route53 verify no DNS SEC is present run command on AWS CLI dig animlas4life.org dnskey +dnssec Set up DNS SEC Route53 &amp;gt; Hosted zones go inside animals4life.org
+DNSSEC signing &amp;gt; enable DNSSEC signing
+Create KSK Verify DNSSEC Keys run command on AWS CLI dig animlas4life.org dnskey +dnssec Get KSK signing algorithm &amp;amp; public key Route 53 &amp;gt; hosted zone &amp;gt; animlas4life.org &amp;gt; DNSSEC signing &amp;gt; view information to create DS record Create train of trust with TLD DNS &amp;gt; registered domains &amp;gt; DNSSEC Status this will modify the TLD of animals4lyfe domain zone by adding DS record this process might take a hour to complete.</description>
+    </item>
+    
+  </channel>
+</rss>
