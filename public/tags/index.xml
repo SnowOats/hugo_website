@@ -34,6 +34,15 @@
     </item>
     
     <item>
+      <title>AWS Organization</title>
+      <link>/tags/aws-organization/</link>
+      <pubDate>Tue, 13 Jun 2023 18:10:00 -0500</pubDate>
+      
+      <guid>/tags/aws-organization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Budget</title>
       <link>/tags/budget/</link>
       <pubDate>Tue, 13 Jun 2023 18:10:00 -0500</pubDate>
@@ -84,6 +93,15 @@
       <pubDate>Tue, 13 Jun 2023 18:10:00 -0500</pubDate>
       
       <guid>/tags/s3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSO</title>
+      <link>/tags/sso/</link>
+      <pubDate>Tue, 13 Jun 2023 18:10:00 -0500</pubDate>
+      
+      <guid>/tags/sso/</guid>
       <description></description>
     </item>
     

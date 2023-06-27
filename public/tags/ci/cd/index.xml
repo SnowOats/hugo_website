@@ -11,10 +11,9 @@
       <pubDate>Tue, 13 Jun 2023 18:10:00 -0500</pubDate>
       
       <guid>/projects/aws-cloud-resume-challenge/</guid>
-      <description>Part 1 set up SSO, S3, Route 53, and Cloudfront Set up Organization and SSO Create Organizational accounts Best practices guide for setting up AWS Organization:
-(Optional) use OrgFormation / AWS Control Tower with AWS SSO This is best used for enterprise set up
-SSO and Organization set up Guide
-Set up billing alerts Creating a budget Open the AWS Billing console at https://console.aws.amazon.com/billing/. or select Select Billing Dashboard from your account or type Billing on Search bar In the navigation pane, choose Budgets.</description>
+      <description>AWS Cloud Resume Challenge Introduction The AWS Cloud Resume Challenge revolves around creating a serverless resume website that incorporates various AWS services such as Amazon S3, AWS Lambda, Amazon API Gateway, AWS CloudFormation, and AWS DynamoDB.
+Part 1 set up SSO, S3, Route 53, and Cloudfront Set up Organization and SSO Create Organizational accounts Best practices guide for setting up AWS Organization:
+(Optional) use OrgFormation / AWS Control Tower with AWS SSO This is best used for enterprise set up</description>
     </item>
     
   </channel>

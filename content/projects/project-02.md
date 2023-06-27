@@ -3,7 +3,7 @@ title: "AWS Cloud Resume Challenge"
 date: 2023-06-13T18:10:00-05:00
 slug: aws-cloud-resume-challenge
 category: AWS
-tags: ["AWS","Route 53", "Lambda", "DynamoDB", "Budget", "S3", "Cloudfront", "ACM","API Gateway", "CI/CD"]
+tags: ["AWS","Route 53", "Lambda", "DynamoDB", "Budget", "S3", "Cloudfront", "ACM","API Gateway", "CI/CD", "AWS Organization", "SSO"]
 summary:
 description:
 cover:
@@ -14,6 +14,8 @@ cover:
 showtoc: true
 draft: false
 ---
+# AWS Cloud Resume Challenge Introduction
+The AWS Cloud Resume Challenge revolves around creating a serverless resume website that incorporates various AWS services such as Amazon S3, AWS Lambda, Amazon API Gateway, AWS CloudFormation, and AWS DynamoDB. 
 # Part 1 set up SSO, S3, Route 53, and Cloudfront
 ## Set up Organization and SSO
 ### Create Organizational accounts
@@ -197,7 +199,7 @@ Add Trigger for cloud front and set up lambda edge for origin request
 # Set up DynamoDB, lambda api
 ### Create dynamoDB table item
 ![Alt Text](../../images/Pasted%20image%2020230529182253.png)
-### lambda function
+### lambda function to read dynamoDB visitor counter
 ```python
 import json
 import boto3
@@ -219,26 +221,35 @@ def lambda_handler(event, context):
 
     return views
 ```
-You can create the environment variable under Configuration > Environment variables\
+You can create the environment variable under Configuration > Environment variables
 
 #### 'Internal Server Error' when calling lambda function to update dynamoDB
 Missing permission. 
-Lambda function > Permission > execution role
+Lambda function > Permission > execution role > Edit
 ![Alt Text](../../images/Pasted%20image%2020230529171333.png)
+Click on the hyperlink below
+![Alt Text](../../images/Pasted%20image%2020230627000412.png)
 Attach the following policies
 ![Alt Text](../../images/Pasted%20image%2020230529171309.png)
 
 ### API Gateway
 #### Set up API call
-on the navigation pane, select **Resources**
+on the navigation pane, select **Resources**\
 Click Actions > Create Method
 ![Alt Text](../../images/Pasted%20image%2020230605131725.png)
 connect API Gateway to Lambda function
 ![Alt Text](../../images/Pasted%20image%2020230605135636.png)
 #### Enable CORS
 Click Actions > Enable CORS\
-once set up, enable CORS so that cloud front origin is allowed to interact with API Gateway
+once set up, enable CORS so that cloud front origin is allowed to interact with API Gateway.\
+Best practice is to restrict CORS to your actual domain. I included it as "*" for debugging purposes on localhost.
 ![Alt Text](../../images/Pasted%20image%2020230605135855.png)
+#### Deploy API
+Click on the Deploy API. Create a stage if not already and deploy it to the stage created.\
+Copy the invoke URL, it later be used for the javascript to call the API.
+![Alt Text](../../images/Pasted%20image%2020230627001401.png)
+For example, I created a stage Dev and deployed my API. Record the URI, this will be the endpoint to call the API.
+![Alt Text](../../images/Pasted%20image%2020230627001320.png)
 #### Test API
 ![Alt Text](../../images/Pasted%20image%2020230605132231.png)
 ##### Request Body
@@ -262,13 +273,14 @@ once set up, enable CORS so that cloud front origin is allowed to interact with 
         "application/json"
     ],
     "X-Amzn-Trace-Id": [
-        "Root=1-647e2790-8f1e856b24006082d3123ec6;Sampled=0;lineage=60feb345:0"
+        "Root=1-647e2790-8f1e856b24006082d3123;Sampled=0;lineage=60feb345:0"
     ]
 }
 ```
 
 #### ERROR: {"message":"Missing Authentication Token"}
-The API gateway link cannot directly be called, instead pass in a Request Body by making a cURL request
+The API gateway link cannot directly be called, instead pass in a Request Body as `{}`.\
+This can be done through a cURL request or Postman.
 
 ### Website modification
 #### index.html
@@ -296,11 +308,13 @@ async function updateCounter() {
 }
 updateCounter();
 ```
-> replace **API_GATEWAY** with your URL. 
+> replace **API_GATEWAY** with your URL. \
+
 Alternatively, instead of using two files, you can embed within **index.html** by inserting the <script> tag
 # Set up CI/CD
+## Github Actions
 #### Setting up GitHub actions
-Create the file `.github/workflows` inside your project and create `main.yaml` with the following config
+Create the file `.github/workflows` inside your project and create `main.yaml` with the following config\
 **Main.yaml**
 ```yaml
 name: Upload Website onto S3
@@ -330,12 +344,13 @@ On github page, move to Settings\
 On the left navigation pane, Security > Secrets and variables > Actions\
 Create new repository secrets
 ![Alt Text](../../images/Pasted%20image%2020230531174217.png)
->AWS_S3_BUCKET is the name of the s3 bucket, not the ARN.
+>**AWS_S3_BUCKET** is the name of the s3 bucket, not the ARN.\
+>**AWS_SECRET_KEY** is the private access key\
+>**AWS_ACCES_KEY_ID** is the public access key
 #### Verify changes
 Create a new PR to the repo and go to actions. The workflow will start deploying the PR onto the S3.
 ![Alt Text](../../images/Pasted%20image%2020230531174459.png)
-### Errors
-#### ACL blocking github/floworks
+### Error: ACL blocking github/floworks
 upload failed: public/page/index.html to s3://***/page/index.html An error occurred (AccessDenied) when calling the PutObject operation: Access Denied
 
 1) Configure S3 bucket to allow public access to ACL
@@ -345,3 +360,39 @@ upload failed: public/page/index.html to s3://***/page/index.html An error occur
 3) Verify that the bucket owner has Write access to the bucket. This assumes the access keys belongs to the bucket owner.
 ![Alt Text](../../images/Pasted%20image%2020230529193914.png)
 
+## Create Lambda to automatically invalidate Cloud Front Cache
+Set the Environment variable for your CloudFront distribution ID and body as
+```python
+import boto3
+import json
+import os
+import time
+def lambda_handler(event, context):
+    distribution_id = os.environ.get('CLOUDFRONT_ID')
+    paths = {
+        'Quantity': 1,
+        'Items': ['/*']
+    }
+
+    cloudfront = boto3.client('cloudfront')
+    cloudfront.create_invalidation(
+        DistributionId=distribution_id,
+        InvalidationBatch={
+            'Paths': paths,
+            'CallerReference': str(time.time())
+        }
+    )
+    return
+```
+#### Add a trigger
+Add the S3 bucket to the trigger and configured the event types to **All object create events** and **All object delete events**.
+![Alt Text](../../images/Pasted%20image%2020230627002037.png)
+![Alt Text](../../images/Pasted%20image%2020230627002101.png)
+#### Configuring Permissions
+Create a inline policy for the lambda function as the following
+![Alt Text](../../images/Pasted%20image%2020230627002558.png)
+In addition attach the **AmazonS3ReadOnlyAccess** to lambda. Best practice is to create a new in line policy to restrict this further, achieving the least principle rule. \
+Final result for the permission policies of the lambda function will include 
+![Alt Text](../../images/Pasted%20image%2020230627002743.png)
+##### error: An error occurred (AccessDenied) when calling the CreateInvalidation operation.
+Recheck your inline policy for so that the account id and distribution id are crorrect. 

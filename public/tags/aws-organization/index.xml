@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>S3 on humail khan</title>
-    <link>/tags/s3/</link>
-    <description>Recent content in S3 on humail khan</description>
+    <title>AWS Organization on humail khan</title>
+    <link>/tags/aws-organization/</link>
+    <description>Recent content in AWS Organization on humail khan</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 13 Jun 2023 18:10:00 -0500</lastBuildDate><atom:link href="/tags/s3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Jun 2023 18:10:00 -0500</lastBuildDate><atom:link href="/tags/aws-organization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS Cloud Resume Challenge</title>
       <link>/projects/aws-cloud-resume-challenge/</link>
