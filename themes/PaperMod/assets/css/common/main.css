@@ -10,6 +10,10 @@
     font-size: 40px;
 }
 
+.home-featured-line-break {
+    padding: 0px 0;
+}
+
 .pagination {
     display: flex;
 }

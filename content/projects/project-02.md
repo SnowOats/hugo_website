@@ -13,6 +13,7 @@ cover:
   relative: true
 showtoc: true
 draft: false
+featured: true
 ---
 # AWS Cloud Resume Challenge Introduction
 The AWS Cloud Resume Challenge revolves around creating a serverless resume website that incorporates various AWS services such as Amazon S3, AWS Lambda, Amazon API Gateway, AWS CloudFormation, and AWS DynamoDB. 
