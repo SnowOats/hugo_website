@@ -16,7 +16,7 @@ draft: false
 ---
 ## Create IAM role
 ### Set trusted entity 
-[Customers Data](../../folders/customer.csv)
+[Customers_Data](../../folders/customer.csv)
 ![Alt Text](../../images/Pasted%20image%2020230705172515.png)
 ```toml
 resource "aws_iam_role" "glue_role" {
