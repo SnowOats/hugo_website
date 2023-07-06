@@ -4,8 +4,8 @@ date: 2023-06-13T18:10:00-05:00
 slug: aws-cloud-resume-challenge
 category: AWS
 tags: ["AWS","Route 53", "Lambda", "DynamoDB", "Budget", "S3", "Cloudfront", "ACM","API Gateway", "CI/CD", "AWS Organization", "SSO"]
-summary:
-description:
+summary: The AWS Cloud Resume Challenge revolves around creating a serverless resume website that incorporates various AWS services. This challenge provision the infrastructure for the front-end, back-end and CI/CD pipeline.
+description: 
 cover:
   image:
   alt:
@@ -127,7 +127,7 @@ if not, go to your certificate under ACM and create a record using the CNAME nam
 Invalidate Cloudfront cache
 https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html#invalidating-objects-api
 `aws cloudfront create-invalidation --distribution-id E3HKHQS3APLTXO --paths "/*"`
-![Alt Text](Bins/Images/../../images/Pasted%20image%2020230202130333.png)
+![Alt Text](../../images/Pasted%20image%2020230202130333.png)
 
 #### Permission denied error
 Check to see if name servers for host zone is the same for the registered domain
@@ -197,6 +197,7 @@ add trust relation for lambda function
 ```
 Add Trigger for cloud front and set up lambda edge for origin request
 ![Alt Text](../../images/Pasted%20image%2020230529162036.png)
+
 # Set up DynamoDB, lambda api
 ### Create dynamoDB table item
 ![Alt Text](../../images/Pasted%20image%2020230529182253.png)

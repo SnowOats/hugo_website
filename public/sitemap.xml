@@ -2,13 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tags/aws/</loc>
+    <lastmod>2023-07-05T20:55:31-05:00</lastmod>
+  </url><url>
+    <loc>/projects/aws-glue-masking-pii/</loc>
+    <lastmod>2023-07-05T20:55:31-05:00</lastmod>
+  </url><url>
+    <loc>/tags/glue/</loc>
+    <lastmod>2023-07-05T20:55:31-05:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2023-07-05T20:55:31-05:00</lastmod>
+  </url><url>
+    <loc>/tags/iam/</loc>
+    <lastmod>2023-07-05T20:55:31-05:00</lastmod>
+  </url><url>
+    <loc>/projects/</loc>
+    <lastmod>2023-07-05T20:55:31-05:00</lastmod>
+  </url><url>
+    <loc>/tags/s3/</loc>
+    <lastmod>2023-07-05T20:55:31-05:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2023-07-05T20:55:31-05:00</lastmod>
+  </url><url>
+    <loc>/tags/terraform/</loc>
+    <lastmod>2023-07-05T20:55:31-05:00</lastmod>
+  </url><url>
     <loc>/tags/acm/</loc>
     <lastmod>2023-06-13T18:10:00-05:00</lastmod>
   </url><url>
     <loc>/tags/api-gateway/</loc>
-    <lastmod>2023-06-13T18:10:00-05:00</lastmod>
-  </url><url>
-    <loc>/tags/aws/</loc>
     <lastmod>2023-06-13T18:10:00-05:00</lastmod>
   </url><url>
     <loc>/projects/aws-cloud-resume-challenge/</loc>
@@ -26,25 +50,13 @@
     <loc>/tags/dynamodb/</loc>
     <lastmod>2023-06-13T18:10:00-05:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2023-06-13T18:10:00-05:00</lastmod>
-  </url><url>
     <loc>/tags/lambda/</loc>
-    <lastmod>2023-06-13T18:10:00-05:00</lastmod>
-  </url><url>
-    <loc>/projects/</loc>
     <lastmod>2023-06-13T18:10:00-05:00</lastmod>
   </url><url>
     <loc>/tags/route-53/</loc>
     <lastmod>2023-06-13T18:10:00-05:00</lastmod>
   </url><url>
-    <loc>/tags/s3/</loc>
-    <lastmod>2023-06-13T18:10:00-05:00</lastmod>
-  </url><url>
     <loc>/tags/sso/</loc>
-    <lastmod>2023-06-13T18:10:00-05:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2023-06-13T18:10:00-05:00</lastmod>
   </url><url>
     <loc>/projects/aws-macie-demo/</loc>
@@ -57,9 +69,6 @@
     <lastmod>2023-06-13T12:00:01-05:00</lastmod>
   </url><url>
     <loc>/tags/sns/</loc>
-    <lastmod>2023-06-13T12:00:01-05:00</lastmod>
-  </url><url>
-    <loc>/tags/terraform/</loc>
     <lastmod>2023-06-13T12:00:01-05:00</lastmod>
   </url><url>
     <loc>/tags/dns-sec/</loc>

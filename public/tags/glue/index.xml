@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Glue on humail khan</title>
+    <link>/tags/glue/</link>
+    <description>Recent content in Glue on humail khan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 05 Jul 2023 20:55:31 -0500</lastBuildDate><atom:link href="/tags/glue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS Glue Masking PII</title>
+      <link>/projects/aws-glue-masking-pii/</link>
+      <pubDate>Wed, 05 Jul 2023 20:55:31 -0500</pubDate>
+      
+      <guid>/projects/aws-glue-masking-pii/</guid>
+      <description>This project will mask sensitive data found within a csv file and replace the text with *</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,7 +5,16 @@
     <link>/tags/s3/</link>
     <description>Recent content in S3 on humail khan</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 13 Jun 2023 18:10:00 -0500</lastBuildDate><atom:link href="/tags/s3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Jul 2023 20:55:31 -0500</lastBuildDate><atom:link href="/tags/s3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS Glue Masking PII</title>
+      <link>/projects/aws-glue-masking-pii/</link>
+      <pubDate>Wed, 05 Jul 2023 20:55:31 -0500</pubDate>
+      
+      <guid>/projects/aws-glue-masking-pii/</guid>
+      <description>This project will mask sensitive data found within a csv file and replace the text with *</description>
+    </item>
+    
     <item>
       <title>AWS Cloud Resume Challenge</title>
       <link>/projects/aws-cloud-resume-challenge/</link>
