@@ -4,8 +4,8 @@ date: 2023-07-05T20:55:31-05:00
 slug: aws-glue-masking-pii
 category: AWS
 tags: ["AWS","IAM", "S3", "Glue", "Terraform"]
-summary:
-description: This project will mask sensitive data found within a csv file and replace the text with *
+summary: This project will walkthorugh AWS Glue products, such as data catalog, databases, tables, crawlers, and glue jobs, resulting in sensitive data found within a csv file being masked with '****'
+description: 
 cover:
   image:
   alt:
@@ -16,6 +16,7 @@ draft: false
 ---
 ## Create IAM role
 ### Set trusted entity 
+[Customers Data](../../folders/customer.csv)
 ![Alt Text](../../images/Pasted%20image%2020230705172515.png)
 ```toml
 resource "aws_iam_role" "glue_role" {

@@ -12,7 +12,7 @@
       <pubDate>Wed, 05 Jul 2023 20:55:31 -0500</pubDate>
       
       <guid>/projects/aws-glue-masking-pii/</guid>
-      <description>This project will mask sensitive data found within a csv file and replace the text with *</description>
+      <description>This project will walkthorugh AWS Glue products, such as data catalog, databases, tables, crawlers, and glue jobs, resulting in sensitive data found within a csv file being masked with &amp;lsquo;****&amp;rsquo;</description>
     </item>
     
     <item>
@@ -22,8 +22,8 @@
       
       <guid>/projects/aws-macie-demo/</guid>
       <description>Amazon Macie Goal: use Amazon Macie to identify sensitive information stored in an S3 bucket and notify subscribers Credit cards - cc.txt
-American Express 5135725008183484 09/26 CVE: 550 American Express 347965534580275 05/24 CCV: 4758 Mastercard 5105105105105100 Exp: 01/27 Security code: 912 Employee information - employees.txt
-74323 Julie Field Lake Joshuamouth, OR 30055-3905 1-196-191-4438x974 53001 Paul Union New John, HI 94740 Amanda Wells 354-70-6172 242 George Plaza East Lawrencefurt, VA 37287-7620 GB73WAUS0628038988364 587 Silva Village Pearsonburgh, NM 11616-7231 LDNM1948227117807 Brett Garza Access credentials - keys.</description>
+1 2 3 4 5 6 7 8 9 10 11 12 American Express 5135725008183484 09/26 CVE: 550 American Express 347965534580275 05/24 CCV: 4758 Mastercard 5105105105105100 Exp: 01/27 Security code: 912 Employee information - employees.txt
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 74323 Julie Field Lake Joshuamouth, OR 30055-3905 1-196-191-4438x974 53001 Paul Union New John, HI 94740 Amanda Wells 354-70-6172 242 George Plaza East Lawrencefurt, VA 37287-7620 GB73WAUS0628038988364 587 Silva Village Pearsonburgh, NM 11616-7231 LDNM1948227117807 Brett Garza Access credentials - keys.</description>
     </item>
     
   </channel>

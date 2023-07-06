@@ -12,7 +12,7 @@
       <pubDate>Wed, 05 Jul 2023 20:55:31 -0500</pubDate>
       
       <guid>/projects/aws-glue-masking-pii/</guid>
-      <description>This project will mask sensitive data found within a csv file and replace the text with *</description>
+      <description>This project will walkthorugh AWS Glue products, such as data catalog, databases, tables, crawlers, and glue jobs, resulting in sensitive data found within a csv file being masked with &amp;lsquo;****&amp;rsquo;</description>
     </item>
     
   </channel>
