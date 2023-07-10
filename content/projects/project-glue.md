@@ -14,9 +14,9 @@ cover:
 showtoc: true
 draft: false
 ---
+Download this CSV file [Customers_Data](../../folders/customer.csv)
 ## Create IAM role
 ### Set trusted entity 
-[Customers_Data](../../folders/customer.csv)
 ![Alt Text](../../images/Pasted%20image%2020230705172515.png)
 ```toml
 resource "aws_iam_role" "glue_role" {

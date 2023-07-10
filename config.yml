@@ -69,8 +69,8 @@ params:
     imageHeight: 120
     imageTitle: "my image"
     buttons:
-      - name: Resume
-        url: resume
+      - name: Tags
+        url: tags
       - name: Projects
         url: projects
 
@@ -106,10 +106,6 @@ menu:
       name: Tags
       url: /tags/
       weight: 10
-    - identifier: Resume
-      name: Resume
-      url: /resume/
-      weight: 40
     - identifier: Projects
       name: Projects
       url: /projects/
